@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<app-data-biding></app-data-biding>
+  <router-outlet></router-outlet>`
 })
-export class AppComponent {
-  title = 'primeiro-projeto';
+
+export class AppComponent implements OnInit{
+  
+  constructor() {}
+  //ngOnInit = Evento para quando a aplicação for carregada
+  ngOnInit(): void {
+
+  }
+
 }
